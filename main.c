@@ -13,7 +13,10 @@ int main(int argc, const char* argv[]) {
    insere(l, 23);
 
    imprime(l);
-   
+
+   retira(l, 12);
+   imprime(l);
+
     printf("\n");
     return 0;
 }

@@ -28,6 +28,27 @@ void insere(Lista* l, TipoItem x) {
         l->item[l->pos_livre++] = x;
 }
 
+// Retira o item da lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: item é removido da lista
+void retira(Lista* l, TipoItem x) {
+    if(vazia(l))
+        printf("Lista vazia: sem elementos para retirar.\n");
+    else {
+        int pos = 0;
+        while(pos < l->pos_livre && x != l->item[pos])
+            pos++;
+        if(pos == l->pos_livre)
+            printf("Elemento não encontrado");
+        else {
+            int i;
+            for(i = pos; i < l->pos_livre; i++)
+                l->item[i] = l->item[i + 1];
+        }
+        l->pos_livre--;
+    }
+}
+
 // Imprime itens da lista
 // Pré-condição: ponteiro não nulo para estrutura lista
 // Pós-condição: itens exibidos no console
