@@ -28,4 +28,9 @@ int vazia(Lista* l);
 // Pós-condição: item é inserido na lista
 void insere(Lista* l, TipoItem x);
 
+// Imprime itens da lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: itens exibidos no console
+void imprime(Lista* l);
+
 #endif /* lista_h */

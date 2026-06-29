@@ -27,3 +27,18 @@ void insere(Lista* l, TipoItem x) {
     else
         l->item[l->pos_livre++] = x;
 }
+
+// Imprime itens da lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: itens exibidos no console
+void imprime(Lista* l) {
+    if(!vazia(l)) {
+        int pos = 0;
+        printf("[ ");
+        while (pos < l->pos_livre) {
+           printf("%d ", l->item[pos]);
+           pos++;
+        }
+        printf("]\n");
+    }
+}

@@ -12,6 +12,8 @@ int main(int argc, const char* argv[]) {
    insere(l, 12);
    insere(l, 23);
 
+   imprime(l);
+   
     printf("\n");
     return 0;
 }
