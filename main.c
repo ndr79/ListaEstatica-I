@@ -7,6 +7,11 @@ int main(int argc, const char* argv[]) {
 
    l = cria_lista_vazia();
 
-    printf("Olá, mundo.\n");
+   insere(l, 2);
+   insere(l, 5);
+   insere(l, 12);
+   insere(l, 23);
+
+    printf("\n");
     return 0;
 }

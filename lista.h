@@ -23,4 +23,9 @@ Lista* cria_lista_vazia(void);
 // Pós-condição: retorna 1 se a lista é vazia ou 0 caso contrário
 int vazia(Lista* l);
 
+// Insere um item na lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: item é inserido na lista
+void insere(Lista* l, TipoItem x);
+
 #endif /* lista_h */

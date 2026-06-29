@@ -17,3 +17,13 @@ Lista* cria_lista_vazia(void) {
 int vazia(Lista* l) {
     return (l->pos_livre == 0);
 }
+
+// Insere um item na lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: item é inserido na lista
+void insere(Lista* l, TipoItem x) {
+    if(l->pos_livre >= TAM_MAX)
+        printf("Lista cheia.\n");
+    else
+        l->item[l->pos_livre++] = x;
+}
