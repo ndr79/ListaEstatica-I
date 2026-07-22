@@ -55,4 +55,11 @@ void imprimir(Lista* l);
 // Pós-condição: item é removido da lista
 void retirar(Lista* l, TipoItem x);
 
+// Retorna o tamanho da lista
+// Entrada: lista
+// Retorno: número de elemetos da lista
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: tamanho da lista retornado
+int tamanho(Lista* l);
+
 #endif /* lista_h */
