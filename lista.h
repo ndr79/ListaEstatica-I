@@ -62,4 +62,11 @@ void retirar(Lista* l, TipoItem x);
 // Pós-condição: tamanho da lista retornado
 int tamanho(Lista* l);
 
+// Retorna a posição de um elemento na lista
+// Entrada: lista e elemento a ser localizado
+// Retorno: posição do elemento ou -1 caso não seja encontrado
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: posição do elemento retornada
+int posicao(Lista* l, TipoItem x);
+
 #endif /* lista_h */

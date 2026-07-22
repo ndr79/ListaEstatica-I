@@ -105,3 +105,21 @@ void retirar(Lista* l, TipoItem x) {
 int tamanho(Lista* l) {
     return l->pos_livre;
 }
+
+// Retorna a posição de um elemento na lista
+// Entrada: lista e elemento a ser localizado
+// Retorno: posição do elemento ou -1 caso não seja encontrado
+// Pré-condição: ponteiro não nulo para estrutura lista
+// Pós-condição: posição do elemento retornada
+int posicao(Lista* l, TipoItem x) {
+    int pos = 0;
+
+    while (pos < l->pos_livre && l->item[pos] != x)
+        pos++;
+
+    if (pos == l->pos_livre)
+        return -1;
+        
+    return pos;
+    
+}
